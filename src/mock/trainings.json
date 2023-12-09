@@ -1,0 +1,379 @@
+{
+  "1q2w": {
+    "training1": {
+      "description": "Руки",
+      "exercises": [
+        {"name":"Гравитрон",
+          "recurrence": 4,
+          "quantity": 15,
+          "weight": 89
+        },
+        {"name":"Тяга штанги в наклоне",
+          "recurrence": 3,
+          "quantity": 15,
+          "weight": 15
+        },
+        {"name":"Трапеция со штангой",
+          "recurrence": 3,
+          "quantity": 15,
+          "weight": 20
+        },
+        {"name":"Жим лежа",
+          "recurrence": 4,
+          "quantity": 15,
+          "weight": 15
+        },
+        {"name":"Разведение гантелей",
+          "recurrence": 4,
+          "quantity": 12,
+          "weight": 5
+        },
+        {"name":"Подъем гантелей стоя",
+          "recurrence": 4,
+          "quantity": 12,
+          "weight": 5
+        },
+        {"name":"Молотки",
+          "recurrence": 3,
+          "quantity": 15,
+          "weight": 5
+        },
+        {"name":"Брусья",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": ""
+        },
+        {"name":"Планка",
+          "recurrence": 2,
+          "quantity": "",
+          "weight": ""
+        }
+      ]
+
+    },
+    "training2": {
+      "description": "Ноги",
+      "exercises": [
+        {"name":"Присяд со штангой",
+          "recurrence": 4,
+          "quantity": 15,
+          "weight": 15
+        },
+        {"name":"Мертвая тяга",
+          "recurrence": 3,
+          "quantity": 12,
+          "weight": 15
+        },
+        {"name":"Разгибание ног в тренажере",
+          "recurrence": 3,
+          "quantity": 15,
+          "weight": 27
+        },
+        {"name":"Икры в тренажере",
+          "recurrence": 3,
+          "quantity": "max",
+          "weight": 5
+        },
+        {"name":"Тяга штанги к подбородку",
+          "desription": "Широкий хват",
+          "recurrence": 4,
+          "quantity": 20,
+          "weight": 30
+        },
+        {"name":"Махи гантелей в стороны",
+          "recurrence": 3,
+          "quantity": "max",
+          "weight": 5
+        },
+        {"name":"Махи гантелей перед собой",
+          "recurrence": 3,
+          "quantity": "max",
+          "weight": 5
+        },
+        {"name":"Пресс на коврике",
+          "recurrence": 3,
+          "quantity": 40,
+          "weight": ""
+        },
+        {"name":"Гиперэкстензия",
+          "recurrence": 3,
+          "quantity": 20,
+          "weight": ""
+        }
+      ]
+    }
+  },
+  "1q2w3e": {
+    "training1": {
+      "description": "День 1",
+      "exercises": [
+        {
+          "name": "Кардио",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "Гиперэкстензия",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 0
+        },
+        {
+          "name": "Приседание со штангой",
+          "description": "первый подход с пустым грифом или в тренажере Смита.",
+          "recurrence": 4,
+          "quantity": 12,
+          "weight": 10
+        },
+        {
+          "name": "Выпады «ножницы» ",
+          "description": "с гантелями или блинами",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 2.5
+        },
+        {
+          "name": "Разведение ног в тренажере ",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 20
+        },
+        {
+          "name": "Сведение ног в тренажере",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 20
+        },
+        {
+          "name": "Сгибание ног в тренажере",
+          "description": "лежа на животе",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 25
+        },
+        {
+          "name": "Разгибание ног",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 20
+        },
+        {
+          "name": "Тяга горизонтального блока на плечи",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 23
+        },
+        {
+          "name": "Тяга горизонтального блока к груди",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 23
+        }
+      ]
+    },
+    "training2": {
+      "description": "День 2",
+      "exercises": [
+        {
+          "name": "Кардио",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "Гиперэкстензия",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 0
+        },
+        {
+          "name": "Присед с гантелями",
+          "recurrence": 4,
+          "quantity": 12,
+          "weight": 10
+        },
+        {
+          "name": "Жим ногами лежа вертикальной платформы",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 2.5
+        },
+        {
+          "name": "Тяга верхнего блока за голову",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 20
+        },
+        {
+          "name": "Разведение рук с гантелями стоя",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 20
+        },
+        {
+          "name": "Жим гантели с опорой на скамью",
+          "description": "лежа на животе",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 25
+        }
+      ]
+    },
+    "training3": {
+      "description": "День 3",
+      "exercises": [
+        {
+          "name": "Кардио",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "Гиперэкстензия с отягощением",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 0
+        },
+        {
+          "name": "Присед плие с гантелей",
+          "recurrence": 4,
+          "quantity": 12,
+          "weight": 10
+        },
+        {
+          "name": "Обратные выпады в тренажере Смита",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 2.5
+        },
+        {
+          "name": "Румынская становая тяга",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 20
+        },
+        {
+          "name": "Подъем гантелей на бицепс",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 20
+        },
+        {
+          "name": "Тяга верхнего блока ",
+          "description": "к груди",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 25
+        },
+        {
+          "name": "Подтягивания широким хватом",
+          "recurrence": 3,
+          "quantity": 10,
+          "weight": 20
+        },
+        {
+          "name": "Подтягивания ног в висе",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 23
+        },
+        {
+          "name": "Скручивания на пресс",
+          "recurrence": 2,
+          "quantity": 15,
+          "weight": 23
+        }
+      ]
+    }
+  },
+  "1q2w3e4r": {
+    "training1": {
+      "description": "Тренеровка чтобы перейти из положения лежа в положение сидя",
+      "exercises": [
+        {
+          "name": "перевернитесь на пораженную сторону тела",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "осторожно передвиньте обе ноги на край кровати",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "обопритесь на кровать здоровой рукой",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "приподнимайтесь и садитесь на кровати",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        }
+      ]
+    },
+    "training2": {
+      "description": "Упражнение в положении сидя",
+      "exercises": [
+        {
+          "name": "сомкните руки в замок",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "селайте «замком» движения вперед и назад, затем вправо и влево;",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "наклонитесь вперед и попробуйте дотянуться до пола",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "затем сделайте наклоны вправо, посередине, влево",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "постарайтесь дотянуться до пола и поднимитесь",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        }
+      ]
+    },
+    "training3": {
+      "description": "Передвижение предмета",
+      "exercises": [
+        {
+          "name": "сядьте за стол",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "поставьте на стол стакан на расстоянии вытянутой руки",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        },
+        {
+          "name": "положите здоровую руку на поврежденную руку, захватите стакан обеими руками и двигайте обе руки вокруг стола — влево и вправо",
+          "recurrence": "",
+          "quantity": "",
+          "weight": ""
+        }
+      ]
+    }
+  }
+}
