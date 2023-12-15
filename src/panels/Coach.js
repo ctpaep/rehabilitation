@@ -5,28 +5,24 @@ import {Button, Div, Panel, PanelHeader, PanelHeaderBack} from '@vkontakte/vkui'
 
 import './style.css';
 import {setStorageHelper} from "../helpers/store";
+import { useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
 
 const Coach = props => {
-    const { setActivePanel} = props
-    const deleteHandler = async () => {
-        setActivePanel('home')
-        setStorageHelper('')
-    }
+    const routeNavigator = useRouteNavigator();
+
     return (
-    <Panel id={props.id}>
+    <Panel >
         <PanelHeader
-            before={<PanelHeaderBack onClick={props.go} data-to="home"/>}
+            before={<PanelHeaderBack onClick={() => routeNavigator.back()}/>}
         >
             Coach
         </PanelHeader>
         <Div>Страница в разработке</Div>
-        <Button onClick={deleteHandler}>Назад к выбору</Button>
+        <Button onClick={() => routeNavigator.back()}>Назад к выбору</Button>
     </Panel>
 )};
 
 Coach.propTypes = {
-    id: PropTypes.string.isRequired,
-    go: PropTypes.func.isRequired,
 };
 
 export default Coach;

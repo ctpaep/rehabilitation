@@ -5,29 +5,27 @@ import {Button, Panel, PanelHeader, PanelHeaderBack} from '@vkontakte/vkui';
 
 import './style.css';
 import {setStorageHelper} from "../helpers/store";
+import { useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
 
 const Patient = props => {
-    const { setActivePanel} = props
+    const routeNavigator = useRouteNavigator();
     const changHandler = async () => {
-        setActivePanel('doctor')
         setStorageHelper('doctor')
     }
 
     const deleteHandler = async () => {
-        setActivePanel('home')
         setStorageHelper('')
     }
 
     useEffect(() => {
-        setActivePanel('patient')
         console.log("Попали в юз эфект пациента")
         setStorageHelper('patient')
     }, []);
 
     return (
-    <Panel id={props.id}>
+    <Panel>
         <PanelHeader
-            before={<PanelHeaderBack onClick={props.go} data-to="home"/>}
+            before={<PanelHeaderBack onClick={() => routeNavigator.back()}/>}
         >
             Patient
         </PanelHeader>
@@ -37,8 +35,6 @@ const Patient = props => {
 )};
 
 Patient.propTypes = {
-    id: PropTypes.string.isRequired,
-    go: PropTypes.func.isRequired,
 };
 
 export default Patient;

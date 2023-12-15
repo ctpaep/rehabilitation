@@ -5,6 +5,8 @@ import {Button, Div, Panel, PanelHeader, PanelHeaderBack, CellButton, Separator,
 import {setStorageHelper, getStorageHelper} from "../helpers/store";
 import {OnePatient} from "../components/OnePatient";
 import {AddEditPatient} from "../components/AddEditPatient";
+import { useRouteNavigator } from '@vkontakte/vk-mini-apps-router';
+
 
 import './style.css';
 import {Icon24Add} from "@vkontakte/icons";
@@ -12,20 +14,18 @@ import pt from '../mock/patient.json'
 import trains from "../mock/trainings.json"
 
 const Doctor = props => {
-    const { setActivePanel, setActiveTrain } = props
     const [edit, setEdit] = useState(false)
     const [patients, setArrPatient] = useState(pt)
     const [trainings, setTrainings] = useState(trains)
+    const routeNavigator = useRouteNavigator();
 
     const changHandler = async () => {
-        setActivePanel('patient')
         setStorageHelper('patient')
     }
 
 
     useEffect(() => {
         setStorageHelper('doctor')
-        setActivePanel('doctor')
     }, []);
 
     // changePatient
@@ -41,13 +41,13 @@ const Doctor = props => {
                 ) : (
                 <Panel id={props.id}>
                     <PanelHeader
-                        before={<PanelHeaderBack onClick={props.go} data-to="home"/>}
+                        before={<PanelHeaderBack onClick={() => routeNavigator.back()}/>}
                     >
                         Doctor
                     </PanelHeader>
                     {patients.length > 0 &&
                         <Div>
-                            {patients.map((elem) => <OnePatient key={elem.hash} dataPatient={elem} trains={trainings[elem.hash]} />)}
+                            {patients.map((elem) => <OnePatient key={elem.hash} patient={elem.hash} dataPatient={elem} trains={trainings[elem.hash]} />)}
                         </Div>
                     }
                     <Div>
@@ -66,7 +66,6 @@ const Doctor = props => {
 
 Doctor.propTypes = {
     id: PropTypes.string.isRequired,
-    go: PropTypes.func.isRequired,
 };
 
 export default Doctor;
