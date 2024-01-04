@@ -32,6 +32,11 @@ const router = createHashRouter([
         panel: 'active_panel',
         view: 'default_view'
     },
+    {
+        path: `/active/:id/add-training`, // Параметр id
+        panel: 'addTrine_panel',
+        view: 'default_view'
+    },
 ]);
 // Init VK Mini App
 bridge.send("VKWebAppInit");

@@ -1,7 +1,7 @@
 import React, {useState, useRef} from 'react';
 import PropTypes from 'prop-types';
 import bridge from '@vkontakte/vk-bridge';
-import {Button, Div, Panel, PanelHeader, PanelHeaderBack} from '@vkontakte/vkui';
+import {Button, Card, CardGrid, Div, Group, Header, Panel, PanelHeader, PanelHeaderBack} from '@vkontakte/vkui';
 
 
 
@@ -21,16 +21,21 @@ const ActiveTrain = props => {
     return (
         <Panel>
             <PanelHeader
-                before={<PanelHeaderBack onClick={() => isFirstPage ? routeNavigator.push('/') : routeNavigator.back()} />}
+                before={<PanelHeaderBack onClick={() => isFirstPage ? routeNavigator.push('/') : routeNavigator.back()}/>}
             >
                 ActiveTrain
             </PanelHeader>
             <Div>{data.current.description}</Div>
-            {data.current.exercises.map((el, index) => {
-                console.log("уд", el, index)
-              return  <OneExercises key={el.name} el={el}/>})}
+            <Group mode="plain">
+                <CardGrid size="l">
+                    {data.current.exercises.map((el, index) => {
+                        console.log("уд", el, index)
+                        return <OneExercises key={el.name} el={el}/>
+                    })}
+                </CardGrid>
+            </Group>
         </Panel>
-    )};
+    );};
 
 ActiveTrain.propTypes = {
 
